@@ -29,6 +29,7 @@ const uploadRoutes = require("./routes/upload");
 dotenv.config();
 console.log(process.env.MONGO_URI);
 const app = express();
+app.set("trust proxy", 1);
 const server = http.createServer(app);
 
 // Initialize Socket.IO
