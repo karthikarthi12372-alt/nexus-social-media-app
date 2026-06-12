@@ -345,8 +345,8 @@ cp .env.example .env
 ```
 
 ```env
-VITE_API_URL=http://localhost:5000/api
-VITE_SOCKET_URL=http://localhost:5000
+VITE_API_URL=import.meta.env.VITE_API_URL
+VITE_SOCKET_URL=import.meta.env.VITE_SOCKET_URL
 ```
 
 ### 4. Run Locally
